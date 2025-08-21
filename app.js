@@ -17,16 +17,16 @@ class SlotMachine {
         this.numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         
         this.feedbackItems = {
-            1: 'Missed Deadlines: "Sarah, I\'ve noticed your last two project deliverables were submitted late. Let\'s talk about what\'s getting in the way and how we can adjust timelines or support to help you meet deadlines consistently."',
-            2: 'Excellent Presentation: "Mark, your client presentation yesterday was clear, confident, and addressed every question with data - really impressive. Keep leaning into that style; it\'s building strong client trust."',
-            3: 'Lack of Collaboration: "Jade, during team meetings, it seems you tend to push ahead without checking in with others. I\'d like to see you pause for input more often to foster better collaboration."',
-            4: 'Improved Confidence: "Ali, I\'ve seen a real shift in your confidence when speaking up in meetings over the past month. Keep it up - your ideas are valuable, and your voice is being heard."',
-            5: 'Micromanagement Tendencies: "Tom, I\'ve noticed you\'re closely overseeing every step your team takes. Let\'s work on trusting their process a bit more so they have room to grow."',
-            6: 'Great Crisis Handling: "Priya, the way you calmly managed the system outage yesterday was outstanding. Your clear communication and quick thinking kept things under control."',
-            7: 'Disrespectful Tone: "James, in this morning\'s meeting, your tone came across as dismissive when challenging Jane\'s idea. It\'s important to raise concerns respectfully so we maintain a supportive team culture."',
-            8: 'Innovation and Initiative: "Elena, suggesting that new automation workflow saved the team hours of manual work. That kind of proactive thinking is exactly what we need more of."',
-            9: 'Resistance to Feedback: "Luke, I noticed in our 1:1 that you became defensive when I raised concerns about the last report. Feedback is here to help you succeed, not criticize you."',
-            10: 'Unclear Communication: "Dana, a few team members have been confused by your handover notes. Let\'s work together on structuring them so they\'re easier to follow next time."'
+            1: 'Missed Deadlines: They regularly miss deadlines, affecting team output and reliability.',
+            2: 'Negative Attitude: Their ongoing negativity is bringing down morale across the team.',
+            3: 'Promotion Frustration: They feel overlooked for a promotion and are becoming frustrated or disengaged.',
+            4: 'Team Conflict: Tension with a colleague is impacting collaboration and team cohesion.',
+            5: 'Lacks Confidence: They struggle to speak up or present their ideas clearly in meetings.',
+            6: 'Burnout Warning Signs: They\'re taking on too much, working late, and showing signs of burnout.',
+            7: 'Repeated Errors: They\'re not taking enough care, and repeated errors are affecting others and overall quality.',
+            8: 'Interrupts Others: They dominate conversations, interrupt, or dismiss colleagues\' ideas.',
+            9: 'Inconsistent Performer: Delivers well some days, underperforms others, lacking overall consistency.',
+            10: 'Improved Performance: After receiving feedback, they\'ve made real improvements in their work or behaviour.'
         };
         
         this.init();

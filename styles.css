@@ -39,7 +39,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
     margin: 40px auto;
     max-width: 600px;
 }
@@ -49,13 +48,22 @@ p {
     width: 200px;
     height: 300px;
     background: linear-gradient(145deg, #2c3e50, #34495e);
-    border-radius: 20px;
     box-shadow: 
         0 10px 30px rgba(0,0,0,0.3),
         inset 0 2px 10px rgba(255,255,255,0.1);
     padding: 20px;
     border: 3px solid #1a252f;
     overflow: hidden;
+}
+
+.machine-body:first-child {
+    border-radius: 20px 0 0 20px;
+    border-right: 1px solid #1a252f;
+}
+
+.machine-body:last-of-type {
+    border-radius: 0 20px 20px 0;
+    border-left: 1px solid #1a252f;
 }
 
 .display-window {
@@ -301,7 +309,6 @@ body.bg-yellow {
     
     .slot-machine {
         flex-direction: row;
-        gap: 15px;
         max-width: 400px;
     }
     
@@ -351,7 +358,6 @@ body.bg-yellow {
     
     .slot-machine {
         flex-direction: row;
-        gap: 10px;
         max-width: 320px;
     }
     
@@ -401,7 +407,6 @@ body.bg-yellow {
     
     .slot-machine {
         flex-direction: row;
-        gap: 8px;
         max-width: 280px;
     }
     
