@@ -42,11 +42,6 @@ class SlotMachine {
         // Set initial position to show the first color (red)
         this.colorStrip.style.transition = 'none';
         this.colorStrip.style.transform = 'translateY(0)';
-        
-        // Verify initial position shows red
-        console.log('Initial position set to:', this.colorStrip.style.transform);
-        const initialSwatch = this.colorStrip.querySelector('.color-swatch');
-        console.log('Initial swatch text:', initialSwatch ? initialSwatch.textContent : 'No swatch found');
     }
     
     pull() {
@@ -92,8 +87,6 @@ class SlotMachine {
         // Ensure the final position is exactly aligned with a color swatch
         const alignedPosition = Math.round(finalPosition / stripHeight) * stripHeight;
         
-        console.log('Spinning to:', targetColor, 'Target index:', targetIndex, 'Final position:', finalPosition, 'Aligned position:', alignedPosition);
-        
         // Verify the calculation by checking which color should be visible
         const absolutePosition = Math.abs(alignedPosition);
         const colorCycle = Math.floor(absolutePosition / totalHeight);
@@ -101,12 +94,8 @@ class SlotMachine {
         const visibleColorIndex = Math.floor(positionInCycle / stripHeight);
         const visibleColor = this.colors[visibleColorIndex];
         
-        console.log('Color cycle:', colorCycle, 'Position in cycle:', positionInCycle, 'Visible color index:', visibleColorIndex, 'Visible color:', visibleColor);
-        
         // If there's a mismatch, calculate the correct position
         if (visibleColor !== targetColor) {
-            console.log('MISMATCH DETECTED! Calculating correct position...');
-            
             // Find the correct position by working backwards
             // We need to find a position where the target color is visible
             let correctPosition = alignedPosition;
@@ -120,11 +109,8 @@ class SlotMachine {
                 const testVisibleColorIndex = Math.floor(testPositionInCycle / stripHeight);
                 const testVisibleColor = this.colors[testVisibleColorIndex];
                 
-                console.log(`Testing position ${testPosition}, visible color: ${testVisibleColor}`);
-                
                 if (testVisibleColor === targetColor) {
                     correctPosition = testPosition;
-                    console.log(`Found correct position: ${correctPosition}`);
                     break;
                 }
             }
@@ -140,20 +126,6 @@ class SlotMachine {
         
         // Show result after animation completes
         setTimeout(() => {
-            // Verify the visible color matches the target
-            const currentTransform = this.colorStrip.style.transform;
-            const currentPosition = parseInt(currentTransform.match(/translateY\(([-\d.]+)px\)/)?.[1] || '0');
-            console.log('Final position:', currentPosition);
-            
-            // Calculate which color should be visible at this position
-            const absolutePosition = Math.abs(currentPosition);
-            const colorCycle = Math.floor(absolutePosition / totalHeight);
-            const positionInCycle = absolutePosition % totalHeight;
-            const visibleColorIndex = Math.floor(positionInCycle / stripHeight);
-            const visibleColor = this.colors[visibleColorIndex];
-            
-            console.log('Final visible color:', visibleColor, 'Target color:', targetColor);
-            
             this.showResult(targetColor);
             this.isSpinning = false;
         }, 3000);
