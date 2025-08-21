@@ -147,8 +147,7 @@ class SlotMachine {
         
         // Update result text with personality description
         this.result.innerHTML = `
-            <p>🎰 ${colorName} wins!</p>
-            <p style="font-size: 1rem; margin-top: 10px; line-height: 1.4;">${personalityMessages[color]}</p>
+            <p style="font-size: 1.1rem; line-height: 1.5;">${personalityMessages[color]}</p>
         `;
         
         // Add a subtle animation to the result
