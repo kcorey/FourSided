@@ -1,7 +1,7 @@
 {
-    "name": "Color Slot Machine",
-    "short_name": "Slot Machine",
-    "description": "Pull the arm and watch the colors spin! A classic slot machine experience.",
+    "name": "DISC Personality Slot Machine",
+    "short_name": "DISC Slot",
+    "description": "Pull the arm and discover your DISC personality type! A fun way to learn about yourself.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f0f0f0",

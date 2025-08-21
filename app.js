@@ -134,12 +134,21 @@ class SlotMachine {
     showResult(color) {
         const colorName = this.colorNames[color];
         
+        // DISC personality descriptions
+        const personalityMessages = {
+            red: '🔴 Red (Dominance): Driven, direct, and focused on results - they make quick decisions and love a challenge.',
+            yellow: '🟡 Yellow (Influence): Enthusiastic, sociable, and persuasive - they bring energy and optimism to every room.',
+            green: '🟢 Green (Steadiness): Calm, supportive, and dependable - they value harmony and are loyal team players.',
+            blue: '🔵 Blue (Conscientiousness): Precise, analytical, and detail-oriented - they thrive on structure, accuracy, and logic.'
+        };
+        
         // Change background color
         document.body.className = `bg-${color}`;
         
-        // Update result text
+        // Update result text with personality description
         this.result.innerHTML = `
             <p>🎰 ${colorName} wins!</p>
+            <p style="font-size: 1rem; margin-top: 10px; line-height: 1.4;">${personalityMessages[color]}</p>
         `;
         
         // Add a subtle animation to the result

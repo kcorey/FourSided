@@ -1,12 +1,12 @@
-# Color Slot Machine PWA
+# DISC Personality Slot Machine PWA
 
-A Progressive Web App that simulates a classic slot machine with colorful spinning reels.
+A Progressive Web App that combines the excitement of a classic slot machine with DISC personality type discovery.
 
 ## Features
 
 - **Classic Slot Machine Design**: Authentic slot machine appearance with metallic frame and display window
 - **Smooth Spinning Animation**: Realistic spinning animation that slows to a stop with easing
-- **Color-Based Results**: Four vibrant colors (Red, Green, Blue, Yellow) with matching background changes
+- **DISC Personality Results**: Four colors representing DISC personality types with detailed descriptions
 - **Pull Arm Interaction**: Authentic pull arm that responds to clicks and touch
 - **PWA Support**: Installable on mobile and desktop devices
 - **Responsive Design**: Works on all screen sizes
@@ -19,17 +19,17 @@ A Progressive Web App that simulates a classic slot machine with colorful spinni
 1. **Open the app** in any modern web browser
 2. **Pull the arm** by clicking or tapping on the red handle
 3. **Watch the animation** as the colors spin and come to a stop
-4. **See the result** - the background will change to match the winning color
+4. **Discover your personality** - see which DISC type you land on and read the description
 
-## Color Configuration
+## DISC Personality Types
 
-The slot machine features four vibrant colors:
-- **Red**: Bright red gradient
-- **Green**: Bright green gradient  
-- **Blue**: Bright blue gradient
-- **Yellow**: Bright yellow gradient
+The slot machine features four colors representing DISC personality types:
+- **🔴 Red (Dominance)**: Driven, direct, and focused on results - they make quick decisions and love a challenge
+- **🟢 Green (Steadiness)**: Calm, supportive, and dependable - they value harmony and are loyal team players
+- **🔵 Blue (Conscientiousness)**: Precise, analytical, and detail-oriented - they thrive on structure, accuracy, and logic
+- **🟡 Yellow (Influence)**: Enthusiastic, sociable, and persuasive - they bring energy and optimism to every room
 
-Each spin randomly selects one of these colors as the winner, with the visual display always matching the announced result.
+Each spin randomly selects one of these personality types, with the visual display always matching the announced result.
 
 ## Installation
 
