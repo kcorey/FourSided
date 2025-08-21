@@ -192,10 +192,10 @@ class SlotMachine {
         
         // DISC personality descriptions
         const personalityMessages = {
-            red: '🔴 Red (Dominance): Driven, direct, and focused on results - they make quick decisions and love a challenge.',
-            yellow: '🟡 Yellow (Influence): Enthusiastic, sociable, and persuasive - they bring energy and optimism to every room.',
-            green: '🟢 Green (Steadiness): Calm, supportive, and dependable - they value harmony and are loyal team players.',
-            blue: '🔵 Blue (Conscientiousness): Precise, analytical, and detail-oriented - they thrive on structure, accuracy, and logic.'
+            red: '🔴 Red (Dominance): Driven, direct, and focused on results - they make quick decisions and love a challenge. They prefer feedback to be brief, to the point, and focused on performance outcomes and improvements.',
+            yellow: '🟡 Yellow (Influence): Enthusiastic, sociable, and persuasive - they bring energy and optimism to every room. They respond best to feedback that is positive, encouraging, and delivered in a friendly, conversational tone.',
+            green: '🟢 Green (Steadiness): Calm, supportive, and dependable - they value harmony and are loyal team players. They appreciate feedback that is gentle, thoughtful, and delivered privately with care and patience.',
+            blue: '🔵 Blue (Conscientiousness): Precise, analytical, and detail-oriented - they thrive on structure, accuracy, and logic. They prefer feedback that is clear, fact-based, and supported by data or examples, with time to reflect.'
         };
         
         // Change background color
