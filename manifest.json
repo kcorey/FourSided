@@ -1,7 +1,7 @@
 {
-    "name": "4-Sided Die Roller",
-    "short_name": "Die Roller",
-    "description": "Roll a 4-sided die and see what color lands on top",
+    "name": "Color Slot Machine",
+    "short_name": "Slot Machine",
+    "description": "Pull the arm and watch the colors spin! A classic slot machine experience.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f0f0f0",
