@@ -277,40 +277,9 @@ body.bg-yellow {
     }
     
     .slot-machine {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .machine-body {
-        width: 180px;
-        height: 270px;
-    }
-    
-    .display-window {
-        height: 180px;
-    }
-    
-    .color-swatch {
-        height: 180px;
-        font-size: 1.5rem;
-    }
-    
-    .arm-rod {
-        height: 180px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
-    }
-    
-    .slot-machine {
+        flex-direction: row;
         gap: 15px;
+        max-width: 400px;
     }
     
     .machine-body {
@@ -336,5 +305,95 @@ body.bg-yellow {
         height: 50px;
         top: -25px;
         left: -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+    
+    .slot-machine {
+        flex-direction: row;
+        gap: 10px;
+        max-width: 320px;
+    }
+    
+    .machine-body {
+        width: 140px;
+        height: 210px;
+    }
+    
+    .display-window {
+        height: 140px;
+    }
+    
+    .color-swatch {
+        height: 140px;
+        font-size: 1rem;
+    }
+    
+    .arm-rod {
+        height: 140px;
+    }
+    
+    .arm-handle {
+        width: 45px;
+        height: 45px;
+        top: -22px;
+        left: -12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 8px;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+    
+    .slot-machine {
+        flex-direction: row;
+        gap: 8px;
+        max-width: 280px;
+    }
+    
+    .machine-body {
+        width: 120px;
+        height: 180px;
+    }
+    
+    .display-window {
+        height: 120px;
+    }
+    
+    .color-swatch {
+        height: 120px;
+        font-size: 0.9rem;
+    }
+    
+    .arm-rod {
+        height: 120px;
+    }
+    
+    .arm-handle {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: -10px;
     }
 }
