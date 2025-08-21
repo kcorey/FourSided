@@ -1,34 +1,35 @@
-# 4-Sided Die Roller PWA
+# Color Slot Machine PWA
 
-A Progressive Web App that simulates rolling a 4-sided die (tetrahedron) with colored vertices.
+A Progressive Web App that simulates a classic slot machine with colorful spinning reels.
 
 ## Features
 
-- **3D Tetrahedron Die**: Visual representation of a 4-sided die with colored vertices
-- **Smooth Rolling Animation**: Realistic rolling animation that slows to a stop
-- **Color-Based Results**: Background changes to the color that lands on top
+- **Classic Slot Machine Design**: Authentic slot machine appearance with metallic frame and display window
+- **Smooth Spinning Animation**: Realistic spinning animation that slows to a stop with easing
+- **Color-Based Results**: Four vibrant colors (Red, Green, Blue, Yellow) with matching background changes
+- **Pull Arm Interaction**: Authentic pull arm that responds to clicks and touch
 - **PWA Support**: Installable on mobile and desktop devices
 - **Responsive Design**: Works on all screen sizes
 - **Touch & Click Support**: Works with both touch and mouse interactions
-- **Keyboard Accessibility**: Press Space or Enter to roll
+- **Keyboard Accessibility**: Press Space or Enter to pull the arm
 - **Haptic Feedback**: Vibration feedback on mobile devices
 
 ## How to Use
 
 1. **Open the app** in any modern web browser
-2. **Tap or click** on the die to roll it
-3. **Watch the animation** as the die rolls and comes to a stop
-4. **See the result** - the background will change to the color that landed on top
+2. **Pull the arm** by clicking or tapping on the red handle
+3. **Watch the animation** as the colors spin and come to a stop
+4. **See the result** - the background will change to match the winning color
 
-## Die Configuration
+## Color Configuration
 
-The 4-sided die has 4 vertices, each with a consistent color:
-- **Red vertex**: Appears on 3 faces
-- **Green vertex**: Appears on 3 faces  
-- **Blue vertex**: Appears on 3 faces
-- **Yellow vertex**: Appears on 3 faces
+The slot machine features four vibrant colors:
+- **Red**: Bright red gradient
+- **Green**: Bright green gradient  
+- **Blue**: Bright blue gradient
+- **Yellow**: Bright yellow gradient
 
-When the die lands, one face is on top showing 3 colored vertices. The app randomly selects one of these colors to determine the background.
+Each spin randomly selects one of these colors as the winner, with the visual display always matching the announced result.
 
 ## Installation
 
@@ -45,15 +46,16 @@ When the die lands, one face is on top showing 3 colored vertices. The app rando
 ## Technical Details
 
 - **Framework**: Vanilla JavaScript, HTML5, CSS3
-- **3D Graphics**: CSS transforms and animations
+- **Animations**: CSS transforms and transitions with cubic-bezier easing
 - **PWA Features**: Service Worker, Web App Manifest
 - **Offline Support**: Cached for offline use
-- **Responsive**: Mobile-first design
+- **Responsive**: Mobile-first design with adaptive sizing
+- **Precision Positioning**: Advanced calculation system ensures visual results always match announced results
 
 ## Browser Support
 
 Works on all modern browsers that support:
-- CSS 3D Transforms
+- CSS Transforms and Transitions
 - Service Workers
 - Web App Manifest
 - ES6 Classes
@@ -62,7 +64,7 @@ Works on all modern browsers that support:
 
 To run locally:
 1. Clone or download the files
-2. Serve the files using a local web server
-3. Open in a browser
+2. Serve the files using a local web server (e.g., `python3 -m http.server 8000`)
+3. Open in a browser at `http://localhost:8000`
 
-The app requires HTTPS for PWA features to work properly.
+The app requires HTTPS for PWA features to work properly in production.
