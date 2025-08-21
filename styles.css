@@ -109,6 +109,29 @@ p {
     color: #333;
 }
 
+.number-strip {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.1s linear;
+    top: 0;
+    left: 0;
+    height: 2000px; /* Total height of all number swatches (20 sets of 10 numbers * 200px each) */
+}
+
+.number-swatch {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+}
+
 .machine-frame {
     position: absolute;
     top: 0;
@@ -296,6 +319,11 @@ body.bg-yellow {
         font-size: 1.2rem;
     }
     
+    .number-swatch {
+        height: 160px;
+        font-size: 2rem;
+    }
+    
     .arm-rod {
         height: 160px;
     }
@@ -341,6 +369,11 @@ body.bg-yellow {
         font-size: 1rem;
     }
     
+    .number-swatch {
+        height: 140px;
+        font-size: 1.5rem;
+    }
+    
     .arm-rod {
         height: 140px;
     }
@@ -384,6 +417,11 @@ body.bg-yellow {
     .color-swatch {
         height: 120px;
         font-size: 0.9rem;
+    }
+    
+    .number-swatch {
+        height: 120px;
+        font-size: 1.2rem;
     }
     
     .arm-rod {
